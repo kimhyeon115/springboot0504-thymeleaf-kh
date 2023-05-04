@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/content.css}">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>안녕하세요 타임리프 테스트 페이지입니다</h2><br>
+	<span class="hellotext" th:text="${data}"></span><br>
+	회원의 이름은 <span th:text="${memberDto.name}"></span><br>
+	회원의 나이는 <span th:text="${memberDto.age}"></span>
+</body>
+</html>

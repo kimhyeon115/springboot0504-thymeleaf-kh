@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Thymeleaf each문 연습</title>
+</head>
+<body>
+	<span th:each="dto, status:${memberDtos}">
+		<span th:test="${dto.name}"></span>
+		<span th:test="${dto.age}"></span>	
+	</span>
+</body>
+</html>
